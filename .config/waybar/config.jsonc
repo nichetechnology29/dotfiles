@@ -1,0 +1,47 @@
+// -*- mode: jsonc -*-
+{
+  "layer": "top",
+  "height": 32,
+  "spacing": 4,
+  "margin-top": 2,
+  "margin-left": 2,
+  "margin-right": 2,
+
+  "modules-left":[
+    "hyprland/workspaces",
+    "hyprland/submap"
+  ],
+
+  "modules-center":[
+    "hyprland/window",
+    ],
+
+  "modules-right":[
+    "network",
+    "pulseaudio",
+    "clock",
+  ],
+
+// modules config
+//
+//
+// modules config
+
+ "hyprland/workspaces": {
+  "disable-scroll": false,
+  "all-outputs":true,
+  "format": "{name} {icon}",
+  "on-click": "activate",
+  "format-icons": {
+      // "1": " ",
+      // "2": " ",
+      // "3": "♫",
+      "urgent": "󰀨 ",
+      "default": "◯",
+      "active": ""
+      },
+    "sort-by-number": true,
+  }
+
+  
+}

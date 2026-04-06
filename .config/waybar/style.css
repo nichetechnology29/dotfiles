@@ -1,0 +1,64 @@
+@import "mocha.css";
+* {
+  font-family: JetBrainsMono Nerd Font Mono, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: @text
+}
+
+button {
+  font-family: FontAwesome;
+  background-color: @base;
+  transition: background-color 0.1s ease-in-out;
+  padding: 0 7px;
+}
+
+button:hover {
+  background-color: rgba(69, 71, 90, 0.5);
+  transition: background-color 0.1s ease-in-out;
+  border: none; 
+}
+
+#workspaces button.active{
+  background-color: @overlay0
+}
+
+#workspaces button.urgent{
+  background-color: rgb(249,226,175);
+  padding: 0 7px;
+}
+
+#workspaces button.urgent label{
+   color: #181825;
+}
+
+#workspaces button label {
+    font-size: 15px;
+}
+
+window#waybar{
+  background-color: @crust;
+  border-radius: 10px;
+}
+
+.modules-center {
+  background-color: @base;
+  padding: 0 12px;
+  border-radius: 5px;
+}
+
+.modules-right {
+  background-color: @base;
+  padding: 0 12px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
